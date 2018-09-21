@@ -54,7 +54,7 @@ ul {
     /* #3 #channels #list modifies h2 to ul */
     background-color: white;
     position:relative;
-    height:auto;
+    height:100%;
     top: 0;
     bottom: 72px;
     overflow:scroll;
@@ -178,6 +178,7 @@ li.selected {
     margin-left: 17.5%;
 }
 #messages{
+    height: 100%;
     position:relative;
     top:0;
     bottom:72px;
@@ -209,12 +210,16 @@ li.selected {
 
 /* LAYOUT */
 #channels{
+    display:flex;
+    flex-direction: column;
     position: absolute;
     height:100%;
     width:40%;
 
 }
 #chat{
+    display:flex;
+    flex-direction: column;
     position: absolute;
     height:100%;
     width:60%;
